@@ -1,0 +1,21 @@
+
+
+for i in range(1, 101):
+    multipler_par_3 = (i // 3) * 3 == i
+    multipler_par_5 = (i // 5) * 5 == i
+
+    if multipler_par_3 and multipler_par_5:
+        print("FizzBuzz")
+    elif multipler_par_3:
+        print("Fizz")
+    elif multipler_par_5:
+        print("Buzz")
+    else:
+        print(i)
+
+           
+        
+
+
+ 
+          

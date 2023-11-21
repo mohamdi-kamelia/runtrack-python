@@ -1,0 +1,7 @@
+N = int(input("Saisie un entier supérieur à zéro:"))
+for i in range(1, N + 1):
+    print("Table de multiplication de " ,i , ":")
+    for j in range(1 , 11):
+        resultat = i * j
+        print(i,"*", j ,"=" , resultat)
+        
