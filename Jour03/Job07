@@ -1,0 +1,16 @@
+def string(langage):
+    if langage == "JavaScript":
+        print("tu es un développeur web")
+    elif langage == "python":
+        print("tu es un développeur IA")
+    elif langage == ("java"):
+        print("tu es un développeur logiciel")
+    elif langage == "ReactJS":
+        print("Tu es un développeur mobile")
+    else:
+        print("Un jour, je serai le meilleur développeur!")
+string("java")
+string("python")
+string("ReactJS")
+string("JavaScript")
+string("cisco")

@@ -1,0 +1,18 @@
+def nombre():
+    try:
+        # Demander à l'utilisateur de saisir un nombre
+        i = int(input("Entrez un nombre entier positif : "))
+        
+        # Vérification de  pair ou impair
+        if i >= 0:
+            if i % 2 == 0:
+                print("Le nombre est pair.")
+            else:
+                print("Le nombre est impair.")
+        else:
+            print("Veuillez entrer un nombre positif.")
+    except ValueError:
+        print("Veuillez entrer un nombre entier.")
+#appeler la fonction
+nombre()
+nombre()

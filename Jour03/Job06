@@ -1,0 +1,10 @@
+def nombres (nombre):
+    if nombre > 0 :
+        print("positif")
+    elif nombre < 0:
+        print("négatif")
+    else:
+        print("zéro")
+nombres(-2)
+nombres(0)
+nombres(5)

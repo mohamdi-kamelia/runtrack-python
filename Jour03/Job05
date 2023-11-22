@@ -1,0 +1,29 @@
+def calcule (num1 , operator , num2):
+    if operator == '+':
+        return num1 + num2
+    elif operator == '-':
+        return num1 - num2
+    elif operator == '*':
+        return num1 * num2
+    elif operator == '/':
+        if num2 == 0:
+            print("message d'erreur :division par zéro",)
+        else:
+            return num1 / num2
+    elif operator == '%' :
+        if num2 == 0:
+            print("message d'erreur ")
+        else:
+            return num1 / num2
+    else:
+        print("erreur")
+#appel des fonctions
+resultat1 = calcule(6, '+', 9)
+resultat2 = calcule(4, '*', 4)
+resultat3 = calcule(20, '/', 3)
+resultat4 = calcule(1, '%', 7)
+#afficher les resultats
+print(resultat1)
+print(resultat2)
+print(resultat3)
+print(resultat4)

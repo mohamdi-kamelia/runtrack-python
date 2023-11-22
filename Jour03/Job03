@@ -1,0 +1,12 @@
+def Add(a , b):
+    if type(a) == int and type(b) == int:
+        resultat = a + b
+        print ("la somme de a et b =",resultat )
+    else:
+        print("vous devez incérer des nombres entiers!")
+#appeler la fonction
+Add(4 , 6)
+Add(16 , 20)
+Add( 8 , 13)
+Add(2.5, 4.5)
+"""appel de la fonction"""
