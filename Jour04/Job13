@@ -1,0 +1,43 @@
+def supprime_des_doublons(liste):
+    liste_sans_doublons = []
+
+    for nombre in liste:
+        doublon = False
+
+        # Vérification de la liste
+        for i in liste_sans_doublons:
+            if nombre == i:
+                doublon = True
+                break
+        # ajouter à la liste sans doublons les non doublons
+        if not doublon:
+            liste_sans_doublons += [nombre]
+    return liste_sans_doublons
+
+# Liste d'origine
+ma_liste = [10, 20, 30, 20, 10, 50, 60, 40, 80, 50, 40]
+print(ma_liste)
+
+# Afficher la liste sans doublons
+print(supprime_des_doublons(ma_liste))
+#_____________________#
+def supprime_des_doublons(liste):
+    liste_sans_doublons = []
+    
+    for nombre in liste:
+        if nombre not in liste_sans_doublons:
+            liste_sans_doublons += [nombre]
+    
+    return liste_sans_doublons
+
+# Liste d'origine
+ma_liste = [10, 20, 30, 20, 10, 50, 60, 40, 80, 50, 40]
+print(ma_liste)
+
+# Afficher la liste sans doublons
+print(supprime_des_doublons(ma_liste))
+
+# Vérifier que la liste d'origine n'a pas été modifiée
+print(ma_liste)
+
+   

@@ -6,9 +6,11 @@ def moyenne (noteA , noteB , noteC):
 noteA = float(input("Entrez la première note : "))
 noteB = float(input("Entrez la deuxième note : "))
 noteC = float(input("Entrez la troisième note : "))
+
 #calcule de moyenne
 moyenne_etudiant = moyenne(noteA,noteB,noteC)
 print("La moyenne de l'étudiant est :", moyenne_etudiant)
+
 #les conditions
 if 15 <= moyenne_etudiant <= 20:
     print("Très bon élève")

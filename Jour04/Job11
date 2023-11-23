@@ -1,0 +1,23 @@
+L = [7, 11, 42, 39, 2]
+#afficher la liste 
+print(L)
+
+# création  d'une nouvelle liste avec les éléments incrémentés
+liste = []
+for i in L:
+    liste.append (i + 1)
+
+#afficher le résultat 
+print(liste)
+
+#_____________________________________________________________________#
+
+def ma_liste(liste):
+    liste = []
+    for i in L:
+        liste.append (i + 1)
+    return liste
+L = [7, 11, 42, 39, 2]
+print(ma_liste(L))
+
+    

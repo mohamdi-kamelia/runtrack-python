@@ -9,6 +9,7 @@ def string(langage):
         print("Tu es un développeur mobile")
     else:
         print("Un jour, je serai le meilleur développeur!")
+#appel des fonction
 string("java")
 string("python")
 string("ReactJS")

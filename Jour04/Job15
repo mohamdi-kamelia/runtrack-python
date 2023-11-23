@@ -1,0 +1,38 @@
+def liste(nombre):
+    i = 0
+    while True:
+        swapped = False
+        try:
+            j = 0
+            while True:
+                if nombre[j] > nombre[j + 1]:
+                    nombre[j], nombre[j + 1] = nombre[j + 1], nombre[j]
+                    swapped = True
+                j += 1
+        except IndexError:
+            pass
+
+        i += 1
+        if not swapped:
+            break
+
+def arrondir_liste(liste):
+    i = 0
+    try:
+        while True:
+            entier = int(liste[i])
+            entier2 = liste[i] - entier
+            liste[i] = entier + 1 if entier2 >= 0.5 else entier
+            i += 1
+    except IndexError:
+        pass
+
+
+liste_nombres = [22.4, 4.0, 16.22, 9.10, 11.00, 12.22, 14.20, 5.20, 17.50]
+print( liste_nombres)
+
+arrondir_liste(liste_nombres)
+liste(liste_nombres)
+
+print( liste_nombres)
+

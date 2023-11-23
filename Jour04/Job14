@@ -1,0 +1,41 @@
+def my_long_word(chiffre, chaine):
+    # Initialise deux chaînes vide pour stocker les mots longs et les mots actuels
+    mots_long = ""
+    mot_actuel = ""
+
+    for mot in chaine:
+        if mot.isalpha():   #vérification de type de caractére 
+            mot_actuel += mot     #Ajoute le caractère à la fin du mot actuel
+        
+        elif mot.isspace():              # Vérifie si le caractère est un espace
+            mot_long = False
+            for _ in mot_actuel:          
+                mot_long = True
+                break
+
+            
+            if mot_long and len(mot_actuel) > chiffre:
+                mots_long += mot_actuel + " "
+
+            mot_actuel = ""
+
+   # Vérifie une dernière fois le dernier mot après la boucle
+    mot_long = False
+    for _ in mot_actuel:
+        mot_long = True
+        break
+
+   
+    if mot_actuel and mot_actuel[-1].isalpha():
+        mots_long += mot_actuel
+
+    return mots_long
+
+#tester
+taille_minimale = 3
+chaine = "La peur est le chemin vers le côté obscur, la peur mène à la colère, la colère mène à la haine, la haine mène à la souffrance"
+print(my_long_word(taille_minimale, chaine ))
+
+
+
+

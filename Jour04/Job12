@@ -1,0 +1,31 @@
+def croissance(liste):
+    j = 0
+    while True:
+        addition = False
+        i = 0
+        try:
+            while True:
+                if liste[i] > liste[i + 1]:
+                    # Échanger des éléments 
+                    liste[i], liste[i + 1] = liste[i + 1], liste[i]
+                    addition = True
+                i += 1
+        except IndexError:
+            pass
+
+        j += 1
+        if not addition or j >= i:
+            break
+
+#ma liste 
+ma_liste = [14, 55, 2, 9, 18]
+print( ma_liste)
+
+# Trier la liste dans l'ordre croissant
+croissance(ma_liste)
+
+# Afficher la liste triée
+print( ma_liste)
+
+
+

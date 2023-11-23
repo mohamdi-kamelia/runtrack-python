@@ -1,0 +1,5 @@
+def fruits():
+    listes_fruits = ['pomme','cerise','orange']
+    listes_fruits.append('melon')
+    print(listes_fruits)
+fruits()

@@ -1,0 +1,11 @@
+def fruits ():
+    listes_fruits = ['pomme','cerise','orange','melon']
+    listes_fruits.insert(2,'mange')
+    print(listes_fruits)
+fruits()
+#__________remplacer l'index 2_____#
+def fruits():
+    listes_fruits = ['pomme','cerise','orange','melon']
+    listes_fruits[2] = 'mange'
+    print(listes_fruits)
+fruits()

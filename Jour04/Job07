@@ -1,0 +1,10 @@
+def ma_liste():
+    L = [8, 24, 48, 2, 16]
+    nombre_de_multiples_de_3 = 0
+    for i in L:
+        if i % 3 == 0:
+            nombre_de_multiples_de_3 += 1
+    print( nombre_de_multiples_de_3)
+
+# Afficher le résultat
+ma_liste()
