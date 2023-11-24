@@ -1,0 +1,26 @@
+def chiffrage(message, décalage):
+    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    message_chiffré = ""
+
+    for caractere in message:
+        if caractere == ' ':
+            message_chiffré += ' '
+        elif caractere in alphabet:
+            index_original = alphabet.index(caractere)
+            index_chiffré = (index_original + décalage) % 26
+            caractere_chiffré = alphabet[index_chiffré]
+            message_chiffré += caractere_chiffré
+        else:
+            message_chiffré += caractere
+
+    return message_chiffré
+
+while True:
+    message = input("Entrez votre message : ")
+    décalage = int(input("Entrez votre décalage : "))
+    message_chiffré = chiffrage(message, décalage)
+    print(f"Message chiffré : {message_chiffré}")
+
+
+
+

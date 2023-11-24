@@ -1,0 +1,13 @@
+def distance(nombre_marches, hauteur_marche):
+    # Calcul  en mètres 
+    distance_par_marche = 2 * hauteur_marche / 100  
+    distance_totale = nombre_marches * distance_par_marche
+    
+    # Calcul de la distance par jour et par semaine :
+    distance_par_jour = distance_totale * 5
+    distance_par_semaine = distance_par_jour * 7
+    #afficher le résultat
+    print("Pour", nombre_marches ,"marche de " , hauteur_marche , "cm , le gardien parcourt ", distance_par_semaine , "m par semaine " )
+# tester avec 80 marches et 10 cm
+distance(100, 10)
+

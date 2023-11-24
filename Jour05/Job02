@@ -1,0 +1,16 @@
+def draw_rectangle(width, height):
+    if width <= 0 or height <= 0:
+        print("Le 'height' et le 'width' doivent être supérieures à zéro.")
+        return
+
+    print('|' + '-' * (width - 2) + '|')                            #ligne1
+
+    for _ in range(height - 2):                                     # Lignes intérieures avec 
+        print('|' + ' ' * (width - 2) + '|')
+
+    if height > 1:                                                  # Dernière ligne
+        print('|' + '-' * (width - 2) + '|')
+
+# tester
+draw_rectangle(10, 3)
+

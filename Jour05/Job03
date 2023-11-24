@@ -1,0 +1,17 @@
+def draw_triangle(height):
+    if height <= 0:
+        print("La hauteur doit être supérieure à zéro.")
+        return
+
+    for i in range(height):
+        spaces_before = ' ' * (height - i - 1)             #  l'espace avant le côté gauche
+        spaces_between = ' ' * (2 * i)                     #  l'espace entre les côtés 
+        if i == 0:                                         # Affichage de la ligne du triangle
+            print(spaces_before + "/\\")
+        elif i == height - 1:
+            print("/" + "_" * (2 * height - 2) + "\\")
+        else:
+            print(spaces_before + "/" + spaces_between + "\\")
+
+# tester
+draw_triangle(5)

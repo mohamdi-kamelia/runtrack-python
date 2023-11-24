@@ -12,7 +12,6 @@ def my_long_word(chiffre, chaine):
             for _ in mot_actuel:          
                 mot_long = True
                 break
-
             
             if mot_long and len(mot_actuel) > chiffre:
                 mots_long += mot_actuel + " "

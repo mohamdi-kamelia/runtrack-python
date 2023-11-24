@@ -1,0 +1,22 @@
+def my_sort(liste):
+    n = len(liste)  
+    coups = 0 
+    
+    for _ in range(n):
+        coups += 1  
+        
+        for i in range(n - 1):
+            if liste[i] > liste[i + 1]:
+                liste[i], liste[i + 1] = liste[i + 1], liste[i]
+
+        if all(liste[i] <= liste[i + 1] for i in range(n - 1)):
+            break
+    print("Nombre total de coups nécessaires pour trier la liste : ", coups)
+    return liste
+
+# Tester
+ma_liste = [64, 25, 12, 22, 11, 40, 55, 67, 33, 18, 91, 7, 3, 50]
+liste_triee = my_sort(ma_liste.copy()) 
+print("Liste triée :", liste_triee)
+
+

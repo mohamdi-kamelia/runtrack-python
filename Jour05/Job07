@@ -1,0 +1,20 @@
+def arrondir_notes(notes):
+    notes_arrondies = []
+    
+    for note in notes:
+        if note < 40:
+            notes_arrondies.append(note)  
+        else:
+            reste_division = note % 5
+            if reste_division < 3:
+                notes_arrondies.append(note)
+            else:
+                note_arrondie = note + (5 - reste_division)
+                notes_arrondies.append(note_arrondie)
+    return notes_arrondies
+
+# tester
+notes_eleves = [42, 83, 35, 41, 37, 90]
+print("Notes originales :", notes_eleves)
+notes_arrondies = arrondir_notes(notes_eleves)
+print("Notes arrondies  :", notes_arrondies)
